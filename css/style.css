@@ -1,0 +1,162 @@
+body{
+margin: 0;
+padding: 0;
+}
+
+h1{
+  font-size: 32px;
+  text-align: center;
+  line-height: 2;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto; /* I don't need this  line*/
+  margin: auto;
+  width: 95vw;
+}
+
+div{
+  overflow: hidden;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  grid-column: 1 / -1;
+}
+
+/* Tablet layout */
+/* Four equal columns using fr*/
+/* Six rows of 350px and one of 100px*/
+@media screen and (min-width: 600px){
+  h1{
+    text-transform: uppercase;
+    color: #F00;
+  }
+
+  .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 350px 350px 350px 350px 350px 350px 100px;
+  }
+
+  .img-one{
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+  }
+
+  .img-two{
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    grid-column-start: 3;
+    grid-column-end: span 2;
+  }
+
+  .img-three{
+    grid-row-start: 2;
+    grid-row-end: span 1;
+    grid-column-start: 1;
+    grid-column-end: span 4;
+  }
+
+  .img-four{
+    grid-row-start: 3;
+    grid-row-end: span 1;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+  }
+
+  .img-five{
+    grid-row-start: 3;
+    grid-row-end: span 1;
+    grid-column-start: 3;
+    grid-column-end: span 2;
+  }
+
+  .img-six{
+    grid-row-start: 4;
+    grid-row-end: span 1;
+    grid-column-start: 1;
+    grid-column-end: span 4;
+  }
+
+  .img-seven{
+    grid-row-start: 6;
+    grid-row-end: span 1;
+    grid-column-start: 1;
+    grid-column-end: span 4;
+  }
+
+  .img-eight{
+    grid-row-start: 5;
+    grid-row-end: span 1;
+    grid-column-start: 3;
+    grid-column-end: span 2;
+  }
+
+  .img-nine{
+    grid-row-start: 5;
+    grid-row-end: span 1;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+  }
+}
+
+/* Desktop layout */
+/* Four equal columns using fr*/
+/* Five rows of 350px and one of 100px*/
+@media screen and (min-width: 1000px){
+  h1{
+    text-transform: lowercase;
+    color: #00F;
+  }
+
+  .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 350px 350px 350px 350px 350px 100px;
+  }
+
+  .img-one{
+
+  }
+
+  .img-two{
+
+  }
+
+  .img-three{
+
+  }
+
+  .img-four{
+
+  }
+
+  .img-five{
+
+  }
+
+  .img-six{
+
+  }
+
+  .img-seven{
+
+  }
+
+  .img-eight{
+
+  }
+
+  .img-nine{
+
+  }
+}
